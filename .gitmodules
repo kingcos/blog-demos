@@ -10,3 +10,6 @@
 [submodule "SingleViewAppManually-Demo"]
 	path = SingleViewAppManually-Demo
 	url = git@github.com:kingcos/SingleViewAppManually-Demo.git
+[submodule "libraries_in_ios-demo"]
+	path = libraries_in_ios-demo
+	url = git@github.com:kingcos/libraries_in_ios-demo.git
