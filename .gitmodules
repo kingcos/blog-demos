@@ -4,3 +4,6 @@
 [submodule "bounds-frame-Demo"]
 	path = bounds-frame-Demo
 	url = git@github.com:kingcos/bounds-frame-Demo.git
+[submodule "UIViewController-UIView-LifecycleDemo"]
+	path = UIViewController-UIView-LifecycleDemo
+	url = git@github.com:kingcos/UIViewController-UIView-LifecycleDemo.git
