@@ -1,0 +1,3 @@
+[submodule "UIAppearance-Demo"]
+	path = UIAppearance-Demo
+	url = git@github.com:kingcos/UIAppearance-Demo.git
