@@ -1,3 +1,6 @@
 [submodule "UIAppearance-Demo"]
 	path = UIAppearance-Demo
 	url = git@github.com:kingcos/UIAppearance-Demo.git
+[submodule "bounds-frame-Demo"]
+	path = bounds-frame-Demo
+	url = git@github.com:kingcos/bounds-frame-Demo.git
