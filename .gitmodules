@@ -7,3 +7,6 @@
 [submodule "UIViewController-UIView-LifecycleDemo"]
 	path = UIViewController-UIView-LifecycleDemo
 	url = git@github.com:kingcos/UIViewController-UIView-LifecycleDemo.git
+[submodule "SingleViewAppManually-Demo"]
+	path = SingleViewAppManually-Demo
+	url = git@github.com:kingcos/SingleViewAppManually-Demo.git
