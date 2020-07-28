@@ -1,0 +1,100 @@
+<b>Our arrays, <i>aren't</i>.</b>
+
+<p>There, that's known as a teaser.  You see it in television all the time.  "Find out which common household plant devours pets at night...<i>but first</i>."  And then you have to sit through and watch the stuff about Brad and Angelina shacking up / Shaq driving his new Hummer / Hummer's new  fragrance before they get to the good stuff, the petnivorous plants.  I don't know what I'd do without TiVo.  And here I've done the same thing as the networks.  Shame on me.  I'll get to it, I promise.
+
+<h3>But first</h3>
+
+<p>But first, let's talk about data structures.  I'll try to make this more interesting than Donald Trump's new reality fragrance SUV.  Data structures are really important, we're lead to believe, so important that entire classes in CS curricula discuss nothing else all year.  Gosh!  Let's look at <a href="http://java.sun.com/j2se/1.5.0/docs/guide/collections/reference.html">all the data structures we have available in Java</a>.
+
+<hr>
+<table style="border-spacing: 8px; font-family: Monaco, Courier New, Courier, monospace; font-size: 8pt;">
+	<tr>
+		<td>HashSet</td> <td>TreeSet</td> <td>LinkedHashSet</td> <td>ArrayList</td>
+	</tr>
+	<tr>
+		<td>LinkedList</td> <td>PriorityQueue</td> <td>HashMap</td> <td>TreeMap</td>
+	</tr>
+	<tr>
+		<td>LinkedHashMap</td> <td>WeakHashMap</td> <td>IdentityHashMap</td> <td>CopyOnWriteArrayList</td>
+	</tr>
+	<tr>
+		<td>EnumSet</td> <td>EnumMap</td> <td>ConcurrentLinkedQueue</td> <td>LinkedBlockingQueue</td>
+	</tr>
+	<tr>
+		<td>ArrayBlockingQueue</td> <td>PriorityBlockingQueue</td> <td>DelayQueue</td> <td>SynchronousQueue</td>
+	</tr>
+	<tr>
+		<td>ConcurrentHashMap</td>
+	</tr>
+</table>
+<hr>
+
+That's 21, by my count, excluding the legacy classes like Vector.
+
+<p>Here's <a href="http://www.sgi.com/tech/stl/table_of_contents.html">the data structures we have in C++</a>:
+
+<hr>
+<table style="border-spacing: 8px; font-family: Monaco, Courier New, Courier, monospace; font-size: 8pt;">
+	<tr>
+		<td>vector</td> <td>deque</td> <td>list</td> <td>slist</td>
+	</tr>
+	<tr>
+		<td>bit_vector</td> <td>set</td> <td>map</td> <td>multiset</td>
+	</tr>
+	<tr>
+		<td>multimap</td> <td>hash_set</td> <td>hash_map</td> <td>hash_multiset</td>
+	</tr>
+	<tr>
+		<td>hash_multimap</td> <td>stack</td> <td>queue</td> <td>priority_queue</td>
+	</tr>
+	<tr>
+		<td>bitset</td>
+	</tr>
+</table>
+<hr>
+
+That's, uh, 17.  Here's what I noticed while writing these up: most of these classes tell you how they work, right in the name.  HashMap is a map implemented via hashing.  ArrayList is a list implemented via an array.  hash_multimap is a multi-map implemented via hashing.  And so on.
+
+<h3>CoreFoundation</h3>
+
+<p>I'm going to compare that to <a href="http://developer.apple.com/documentation/CoreFoundation/index.html">CoreFoundation</a>.  CoreFoundation, if you're a bit hazy, is Apple's framework that &quot;sits below&quot; Carbon and Cocoa, and is one of the few places where these two APIs meet.  CoreFoundation has collections, so that other APIs like Quartz that take and return collections don't need separate Carbon and Cocoa interfaces.  But the real reason I'm talking about CoreFoundation is that it's <a href="http://developer.apple.com/darwin/cflite.html">open source</a>.
+
+<p>Here's <a href="http://developer.apple.com/documentation/CoreFoundation/Conceptual/CFCollections/index.html">all the CoreFoundation collections</a>, leaving out the immutable variants:
+
+<hr>
+<table style="border-spacing: 8px; font-family: Monaco, Courier New, Courier, monospace; font-size: 8pt;">
+	<tr>
+		<td>CFMutableDictionary</td> <td>CFMutableBag</td> <td>CFMutableBitVector</td> <td>CFMutableSet</td>
+	</tr>
+	<tr>
+		<td>CFMutableArray</td> <td>CFBinaryHeap</td> <td>CFMutableTree</td>
+	</tr>
+</table>
+<hr>
+
+That's only 7!  And <a href="http://www.opensource.apple.com/darwinsource/10.4.3/CF-368.18/Collections.subproj/">these are all the files?</a>  Doesn't Apple know how important data structures are?  And most of those names don't even tell you how they work.  CFMutableBag?  What's that?  Where's the, like, CFMutableTreeBag and CFMutableHashBag?  But at least some do tell you how they work, like CFBinaryHeap and CFMutableArray.  Right?
+
+<p>Right?
+
+<h3>The array that wasn't</h3>
+
+Take a look in CFArray, at <a href="http://www.opensource.apple.com/darwinsource/10.4.3/CF-368.18/Collections.subproj/CFArray.h">this strange comment:</a>
+
+<pre>
+	The access time for a value in the array is guaranteed to be at
+	worst O(lg N) for any implementation, current and future, but will
+	often be O(1) (constant time). Linear search operations similarly
+	have a worst case complexity of O(N*lg N), though typically the
+	bounds will be tighter, and so on. Insertion or deletion operations
+	will typically be linear in the number of values in the array, but
+	may be O(N*lg N) clearly in the worst case in some implementations.
+	There are no favored positions within the array for performance;
+	that is, it is not necessarily faster to access values with low
+	indices, or to insert or delete values with high indices, or
+	whatever.
+</pre>
+
+<p>It's like Apple skipped out on some sophomore CS lectures.  Everyone knows that arrays don't have logarithmic lookups - they have constant time lookups.  But not these &quot;arrays&quot; (necessarily).  In fact, you might notice that the guarantees Apple does make are weak enough for CFArray to be implemented via a hash table or binary tree.  Talk about implementation latitude!
+
+<p>Let's try some operations and see how CFArray compares to a C++ vector and to a naive array written in C.  I've enclosed my source code <a href="SOURCECODE">here</a>.
+
