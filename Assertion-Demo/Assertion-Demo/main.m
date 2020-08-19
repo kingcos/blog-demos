@@ -58,6 +58,12 @@ int main(int argc, const char * argv[]) {
         // insert code here...
 //        cFunc(0);
         
+        NSString *str = nil;
+//        NSArray * a = @[@"", str, @"aa"];
+        
+//        NSDictionary *b = @{@"a": @"A", str: @"B"};
+        NSDictionary *b = @{@"a": @"A", @"b": str};
+        
         [[Foo new] barWithBaz:0];
         
         [[[NSThread alloc] initWithBlock:^{
