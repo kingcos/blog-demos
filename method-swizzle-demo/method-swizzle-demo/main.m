@@ -9,6 +9,7 @@
 
 #import "A+Ext.h"
 #import "SubB.h"
+#import "SubC.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -22,9 +23,14 @@ int main(int argc, const char * argv[]) {
         
         {
             // 2⃣️
-//            B *b = [[B alloc] init];
-//            [b b];
+            B *b = [[B alloc] init];
+            [b b];
             // B - b
+        }
+        
+        {
+//            SubC *subC = [[SubC alloc] init];
+//            [subC subC];
         }
         
         

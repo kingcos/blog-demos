@@ -11,6 +11,8 @@
 		849D7CA824EE2813003CDCF4 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D7CA724EE2813003CDCF4 /* B.m */; };
 		849D7CAB24EE283D003CDCF4 /* SubB.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D7CAA24EE283D003CDCF4 /* SubB.m */; };
 		849E725A24EE3E0C001B1AB5 /* A+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E725924EE3E0C001B1AB5 /* A+Ext.m */; };
+		849E726024EE97DE001B1AB5 /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E725F24EE97DE001B1AB5 /* C.m */; };
+		849E726324EE97E6001B1AB5 /* SubC.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E726224EE97E6001B1AB5 /* SubC.m */; };
 		84AF0B4B24ED4DB3009D9998 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B4A24ED4DB3009D9998 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,10 @@
 		849D7CAA24EE283D003CDCF4 /* SubB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubB.m; sourceTree = "<group>"; };
 		849E725824EE3E0C001B1AB5 /* A+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A+Ext.h"; sourceTree = "<group>"; };
 		849E725924EE3E0C001B1AB5 /* A+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "A+Ext.m"; sourceTree = "<group>"; };
+		849E725E24EE97DE001B1AB5 /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		849E725F24EE97DE001B1AB5 /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		849E726124EE97E6001B1AB5 /* SubC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubC.h; sourceTree = "<group>"; };
+		849E726224EE97E6001B1AB5 /* SubC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubC.m; sourceTree = "<group>"; };
 		84AF0B4724ED4DB3009D9998 /* method-swizzle-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "method-swizzle-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AF0B4A24ED4DB3009D9998 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +56,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849E725B24EE44BF001B1AB5 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				849D7CA024EE2723003CDCF4 /* A.h */,
+				849D7CA124EE2723003CDCF4 /* A.m */,
+				849E725824EE3E0C001B1AB5 /* A+Ext.h */,
+				849E725924EE3E0C001B1AB5 /* A+Ext.m */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		849E725C24EE44C7001B1AB5 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				849D7CA624EE2813003CDCF4 /* B.h */,
+				849D7CA724EE2813003CDCF4 /* B.m */,
+				849D7CA924EE283D003CDCF4 /* SubB.h */,
+				849D7CAA24EE283D003CDCF4 /* SubB.m */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		849E725D24EE44D6001B1AB5 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				849E725E24EE97DE001B1AB5 /* C.h */,
+				849E725F24EE97DE001B1AB5 /* C.m */,
+				849E726124EE97E6001B1AB5 /* SubC.h */,
+				849E726224EE97E6001B1AB5 /* SubC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		84AF0B3E24ED4DB3009D9998 = {
 			isa = PBXGroup;
 			children = (
@@ -70,14 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				84AF0B4A24ED4DB3009D9998 /* main.m */,
-				849D7CA024EE2723003CDCF4 /* A.h */,
-				849D7CA124EE2723003CDCF4 /* A.m */,
-				849E725824EE3E0C001B1AB5 /* A+Ext.h */,
-				849E725924EE3E0C001B1AB5 /* A+Ext.m */,
-				849D7CA624EE2813003CDCF4 /* B.h */,
-				849D7CA724EE2813003CDCF4 /* B.m */,
-				849D7CA924EE283D003CDCF4 /* SubB.h */,
-				849D7CAA24EE283D003CDCF4 /* SubB.m */,
+				849E725B24EE44BF001B1AB5 /* A */,
+				849E725C24EE44C7001B1AB5 /* B */,
+				849E725D24EE44D6001B1AB5 /* C */,
 			);
 			path = "method-swizzle-demo";
 			sourceTree = "<group>";
@@ -141,7 +175,9 @@
 				849D7CA824EE2813003CDCF4 /* B.m in Sources */,
 				849D7CA224EE2723003CDCF4 /* A.m in Sources */,
 				849E725A24EE3E0C001B1AB5 /* A+Ext.m in Sources */,
+				849E726024EE97DE001B1AB5 /* C.m in Sources */,
 				849D7CAB24EE283D003CDCF4 /* SubB.m in Sources */,
+				849E726324EE97E6001B1AB5 /* SubC.m in Sources */,
 				84AF0B4B24ED4DB3009D9998 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
