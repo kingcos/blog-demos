@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849D7CA224EE2723003CDCF4 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D7CA124EE2723003CDCF4 /* A.m */; };
+		849D7CA824EE2813003CDCF4 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D7CA724EE2813003CDCF4 /* B.m */; };
+		849D7CAB24EE283D003CDCF4 /* SubB.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D7CAA24EE283D003CDCF4 /* SubB.m */; };
+		849E725A24EE3E0C001B1AB5 /* A+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E725924EE3E0C001B1AB5 /* A+Ext.m */; };
 		84AF0B4B24ED4DB3009D9998 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B4A24ED4DB3009D9998 /* main.m */; };
-		84AF0B5324ED4E52009D9998 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B5224ED4E52009D9998 /* Foo.m */; };
-		84AF0B5624ED4E8A009D9998 /* Foo+Ext_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B5524ED4E8A009D9998 /* Foo+Ext_1.m */; };
-		84AF0B5924ED4E96009D9998 /* Foo+Ext_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B5824ED4E96009D9998 /* Foo+Ext_2.m */; };
-		84AF0B5C24ED4EAD009D9998 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B5B24ED4EAD009D9998 /* Bar.m */; };
-		84AF0B5F24ED4EBA009D9998 /* SubFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0B5E24ED4EBA009D9998 /* SubFoo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,18 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		849D7CA024EE2723003CDCF4 /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		849D7CA124EE2723003CDCF4 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		849D7CA624EE2813003CDCF4 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		849D7CA724EE2813003CDCF4 /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		849D7CA924EE283D003CDCF4 /* SubB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubB.h; sourceTree = "<group>"; };
+		849D7CAA24EE283D003CDCF4 /* SubB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubB.m; sourceTree = "<group>"; };
+		849E725824EE3E0C001B1AB5 /* A+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A+Ext.h"; sourceTree = "<group>"; };
+		849E725924EE3E0C001B1AB5 /* A+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "A+Ext.m"; sourceTree = "<group>"; };
 		84AF0B4724ED4DB3009D9998 /* method-swizzle-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "method-swizzle-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AF0B4A24ED4DB3009D9998 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84AF0B5124ED4E52009D9998 /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
-		84AF0B5224ED4E52009D9998 /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
-		84AF0B5424ED4E8A009D9998 /* Foo+Ext_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foo+Ext_1.h"; sourceTree = "<group>"; };
-		84AF0B5524ED4E8A009D9998 /* Foo+Ext_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Foo+Ext_1.m"; sourceTree = "<group>"; };
-		84AF0B5724ED4E96009D9998 /* Foo+Ext_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foo+Ext_2.h"; sourceTree = "<group>"; };
-		84AF0B5824ED4E96009D9998 /* Foo+Ext_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Foo+Ext_2.m"; sourceTree = "<group>"; };
-		84AF0B5A24ED4EAD009D9998 /* Bar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
-		84AF0B5B24ED4EAD009D9998 /* Bar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
-		84AF0B5D24ED4EBA009D9998 /* SubFoo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubFoo.h; sourceTree = "<group>"; };
-		84AF0B5E24ED4EBA009D9998 /* SubFoo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubFoo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				84AF0B4A24ED4DB3009D9998 /* main.m */,
-				84AF0B5124ED4E52009D9998 /* Foo.h */,
-				84AF0B5224ED4E52009D9998 /* Foo.m */,
-				84AF0B5424ED4E8A009D9998 /* Foo+Ext_1.h */,
-				84AF0B5524ED4E8A009D9998 /* Foo+Ext_1.m */,
-				84AF0B5724ED4E96009D9998 /* Foo+Ext_2.h */,
-				84AF0B5824ED4E96009D9998 /* Foo+Ext_2.m */,
-				84AF0B5A24ED4EAD009D9998 /* Bar.h */,
-				84AF0B5B24ED4EAD009D9998 /* Bar.m */,
-				84AF0B5D24ED4EBA009D9998 /* SubFoo.h */,
-				84AF0B5E24ED4EBA009D9998 /* SubFoo.m */,
+				849D7CA024EE2723003CDCF4 /* A.h */,
+				849D7CA124EE2723003CDCF4 /* A.m */,
+				849E725824EE3E0C001B1AB5 /* A+Ext.h */,
+				849E725924EE3E0C001B1AB5 /* A+Ext.m */,
+				849D7CA624EE2813003CDCF4 /* B.h */,
+				849D7CA724EE2813003CDCF4 /* B.m */,
+				849D7CA924EE283D003CDCF4 /* SubB.h */,
+				849D7CAA24EE283D003CDCF4 /* SubB.m */,
 			);
 			path = "method-swizzle-demo";
 			sourceTree = "<group>";
@@ -143,12 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AF0B5924ED4E96009D9998 /* Foo+Ext_2.m in Sources */,
-				84AF0B5324ED4E52009D9998 /* Foo.m in Sources */,
-				84AF0B5C24ED4EAD009D9998 /* Bar.m in Sources */,
-				84AF0B5624ED4E8A009D9998 /* Foo+Ext_1.m in Sources */,
+				849D7CA824EE2813003CDCF4 /* B.m in Sources */,
+				849D7CA224EE2723003CDCF4 /* A.m in Sources */,
+				849E725A24EE3E0C001B1AB5 /* A+Ext.m in Sources */,
+				849D7CAB24EE283D003CDCF4 /* SubB.m in Sources */,
 				84AF0B4B24ED4DB3009D9998 /* main.m in Sources */,
-				84AF0B5F24ED4EBA009D9998 /* SubFoo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

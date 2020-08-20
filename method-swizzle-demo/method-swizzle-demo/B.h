@@ -1,15 +1,17 @@
 //
-//  Bar.h
+//  B.h
 //  method-swizzle-demo
 //
-//  Created by kingcos on 2020/8/19.
+//  Created by kingcos on 2020/8/20.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Bar : NSObject
+@interface B : NSObject
+
+- (void)b;
 
 @end
 
