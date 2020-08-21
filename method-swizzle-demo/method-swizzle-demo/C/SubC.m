@@ -16,16 +16,16 @@
         // 2⃣️ 交换 c & subC（c 来自父类，但父类子类均未实现，subC 来自子类，已实现）
         // 此时，若使用子类对象调用时会出现死循环
         {
-            Method c = class_getInstanceMethod([self class], @selector(c));
-            Method subC = class_getInstanceMethod([self class], @selector(subC));
+            Method c = class_getInstanceMethod(self, @selector(c));
+            Method subC = class_getInstanceMethod(self, @selector(subC));
 
-            BOOL isAddedMethodToSubClass = class_addMethod([self class],
+            BOOL isAddedMethodToSubClass = class_addMethod(self,
                                                            @selector(c),
-                                                           method_getImplementation(c),
-                                                           method_getTypeEncoding(c));
+                                                           method_getImplementation(subC),
+                                                           method_getTypeEncoding(subC));
             
             if (!c) {
-                // c 在父类子类均未实现，则添加
+                // c 在父类子类均未实现，则添加一个实现
                 method_setImplementation(subC, imp_implementationWithBlock(^(id self, SEL _cmd) {
                     NSLog(@"PLACEHOLDER");
                 }));
@@ -33,7 +33,7 @@
             
             if (isAddedMethodToSubClass && c) {
                 // 
-                class_replaceMethod([self class],
+                class_replaceMethod(self,
                                     @selector(subC),
                                     method_getImplementation(c),
                                     method_getTypeEncoding(c));

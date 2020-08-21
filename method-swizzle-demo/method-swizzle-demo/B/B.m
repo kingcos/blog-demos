@@ -10,7 +10,7 @@
 @implementation B
 
 - (void)b {
-    NSLog(@"B - b");
+    NSLog(@"b");
 }
 
 @end

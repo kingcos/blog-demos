@@ -25,12 +25,12 @@ int main(int argc, const char * argv[]) {
             // 2⃣️
             B *b = [[B alloc] init];
             [b b];
-            // B - b
+            // b
         }
         
         {
-//            SubC *subC = [[SubC alloc] init];
-//            [subC subC];
+            SubC *subC = [[SubC alloc] init];
+            [subC subC];
         }
         
         
