@@ -26,6 +26,10 @@ int main(int argc, const char * argv[]) {
             B *b = [[B alloc] init];
             [b b];
             // b
+            SubB *subB = [[SubB alloc] init];
+            [subB b];
+            // subB
+            // b
         }
         
         {
