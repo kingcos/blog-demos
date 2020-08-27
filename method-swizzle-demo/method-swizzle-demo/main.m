@@ -33,8 +33,13 @@ int main(int argc, const char * argv[]) {
         }
         
         {
+            // 3⃣️
             SubC *subC = [[SubC alloc] init];
+            [subC c];
+            // subC
+            // PLACEHOLDER
             [subC subC];
+            // PLACEHOLDER
         }
         
         
