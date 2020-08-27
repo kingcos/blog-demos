@@ -23,11 +23,11 @@ int main(int argc, const char * argv[]) {
         
         {
             // 2⃣️
-            B *b = [[B alloc] init];
-            [b b];
+//            B *b = [[B alloc] init];
+//            [b b];
             // b
-            SubB *subB = [[SubB alloc] init];
-            [subB b];
+//            SubB *subB = [[SubB alloc] init];
+//            [subB b];
             // subB
             // b
         }
