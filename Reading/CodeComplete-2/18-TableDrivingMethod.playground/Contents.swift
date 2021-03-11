@@ -2,6 +2,7 @@ import Foundation
 
 // 18. 表驱动法
 
+// Flexible-Message-Format Example
 // 消息数据类型
 enum FieldType {
     case floatingPoint
@@ -42,6 +43,7 @@ struct IntegerField : AbstractField {
 // ...
 
 // 消息表
+// 定义 fieldIndex 到 Field 的映射
 let fieldDescription: [Int : Field] = [
     1 : Field(fieldType: .floatingPoint, fieldName: "平均温度"),
     2 : Field(fieldType: .floatingPoint, fieldName: "温度范围"),
@@ -51,6 +53,7 @@ let fieldDescription: [Int : Field] = [
 ]
 
 // 对象清单
+// 定义 fieldType 到 实际处理类型 的映射
 let fields: [FieldType : AbstractField] = [
     .floatingPoint : FloatingPointField(),
     .integer       : IntegerField()
@@ -77,10 +80,11 @@ while fieldIdx < numFieldsInMessage && fileStatus == .ok {
 // FloatingPoint - 温度范围
 // Integer - 采样点数
 
-// -----
+// ----- 分割线 -----
 print("-----")
-// -----
+// ----- 分割线 -----
 
+// 阶梯访问表（Stair-Step Access Tables）
 func calculateStudentGrade(_ studentScore: Double) -> String {
     let rangeLimit = [50.0, 65.0, 75.0, 90.0, 100.0]
     let grade = ["F", "D", "C", "B", "A"]
@@ -102,3 +106,8 @@ func calculateStudentGrade(_ studentScore: Double) -> String {
 }
 
 print("studentGrade -", calculateStudentGrade(81))
+
+// ----- 分割线 -----
+print("-----")
+// ----- 分割线 -----
+
