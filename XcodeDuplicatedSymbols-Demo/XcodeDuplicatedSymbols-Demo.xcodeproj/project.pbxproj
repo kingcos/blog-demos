@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31A5DD1E26356E6F00269B1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DD1D26356E6F00269B1B /* main.m */; };
+		31A5DD3226356EED00269B1B /* Dog.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A5DD3026356EED00269B1B /* Dog.h */; };
+		31A5DD3326356EED00269B1B /* Dog.c in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DD3126356EED00269B1B /* Dog.c */; };
+		31A5DD472635702300269B1B /* libDog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A5DD2A26356ED200269B1B /* libDog.a */; };
+		31A5DD482635702500269B1B /* libPuppy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A5DD3A26356FE300269B1B /* libPuppy.a */; };
+		31A5DD4F2635709300269B1B /* Puppy.c in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DD4226356FFA00269B1B /* Puppy.c */; };
+		31A5DD7026359C5400269B1B /* Cat.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A5DD6E26359C5400269B1B /* Cat.h */; };
+		31A5DD7126359C5400269B1B /* Cat.c in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DD6F26359C5400269B1B /* Cat.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31A5DD1826356E6F00269B1B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		31A5DD1A26356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "XcodeDuplicatedSymbols-Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A5DD1D26356E6F00269B1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31A5DD2A26356ED200269B1B /* libDog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A5DD3026356EED00269B1B /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		31A5DD3126356EED00269B1B /* Dog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Dog.c; sourceTree = "<group>"; };
+		31A5DD3A26356FE300269B1B /* libPuppy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPuppy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A5DD4126356FFA00269B1B /* Puppy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Puppy.h; sourceTree = "<group>"; };
+		31A5DD4226356FFA00269B1B /* Puppy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Puppy.c; sourceTree = "<group>"; };
+		31A5DD6E26359C5400269B1B /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		31A5DD6F26359C5400269B1B /* Cat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Cat.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31A5DD1726356E6F00269B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD472635702300269B1B /* libDog.a in Frameworks */,
+				31A5DD482635702500269B1B /* libPuppy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A5DD2826356ED200269B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A5DD3826356FE300269B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310EAFEF2635A04000A85A6E /* libDog */ = {
+			isa = PBXGroup;
+			children = (
+				31A5DD3026356EED00269B1B /* Dog.h */,
+				31A5DD3126356EED00269B1B /* Dog.c */,
+			);
+			name = libDog;
+			sourceTree = "<group>";
+		};
+		310EAFF02635A04C00A85A6E /* libPuppy */ = {
+			isa = PBXGroup;
+			children = (
+				31A5DD4126356FFA00269B1B /* Puppy.h */,
+				31A5DD4226356FFA00269B1B /* Puppy.c */,
+				31A5DD6E26359C5400269B1B /* Cat.h */,
+				31A5DD6F26359C5400269B1B /* Cat.c */,
+			);
+			name = libPuppy;
+			sourceTree = "<group>";
+		};
+		31A5DD1126356E6F00269B1B = {
+			isa = PBXGroup;
+			children = (
+				31A5DD1C26356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */,
+				31A5DD1B26356E6F00269B1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31A5DD1B26356E6F00269B1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A5DD1A26356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */,
+				31A5DD2A26356ED200269B1B /* libDog.a */,
+				31A5DD3A26356FE300269B1B /* libPuppy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31A5DD1C26356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				31A5DD1D26356E6F00269B1B /* main.m */,
+				310EAFEF2635A04000A85A6E /* libDog */,
+				310EAFF02635A04C00A85A6E /* libPuppy */,
+			);
+			path = "XcodeDuplicatedSymbols-Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31A5DD2626356ED200269B1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD3226356EED00269B1B /* Dog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A5DD3626356FE300269B1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD7026359C5400269B1B /* Cat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31A5DD1926356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A5DD2126356E6F00269B1B /* Build configuration list for PBXNativeTarget "XcodeDuplicatedSymbols-Demo" */;
+			buildPhases = (
+				31A5DD1626356E6F00269B1B /* Sources */,
+				31A5DD1726356E6F00269B1B /* Frameworks */,
+				31A5DD1826356E6F00269B1B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XcodeDuplicatedSymbols-Demo";
+			productName = "XcodeDuplicatedSymbols-Demo";
+			productReference = 31A5DD1A26356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */;
+			productType = "com.apple.product-type.tool";
+		};
+		31A5DD2926356ED200269B1B /* Dog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A5DD2B26356ED300269B1B /* Build configuration list for PBXNativeTarget "Dog" */;
+			buildPhases = (
+				31A5DD2626356ED200269B1B /* Headers */,
+				31A5DD2726356ED200269B1B /* Sources */,
+				31A5DD2826356ED200269B1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dog;
+			productName = Dog;
+			productReference = 31A5DD2A26356ED200269B1B /* libDog.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		31A5DD3926356FE300269B1B /* Puppy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A5DD3B26356FE300269B1B /* Build configuration list for PBXNativeTarget "Puppy" */;
+			buildPhases = (
+				31A5DD3626356FE300269B1B /* Headers */,
+				31A5DD3726356FE300269B1B /* Sources */,
+				31A5DD3826356FE300269B1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Puppy;
+			productName = Puppy;
+			productReference = 31A5DD3A26356FE300269B1B /* libPuppy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31A5DD1226356E6F00269B1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					31A5DD1926356E6F00269B1B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					31A5DD2926356ED200269B1B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					31A5DD3926356FE300269B1B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 31A5DD1526356E6F00269B1B /* Build configuration list for PBXProject "XcodeDuplicatedSymbols-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31A5DD1126356E6F00269B1B;
+			productRefGroup = 31A5DD1B26356E6F00269B1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31A5DD1926356E6F00269B1B /* XcodeDuplicatedSymbols-Demo */,
+				31A5DD2926356ED200269B1B /* Dog */,
+				31A5DD3926356FE300269B1B /* Puppy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31A5DD1626356E6F00269B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD1E26356E6F00269B1B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A5DD2726356ED200269B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD3326356EED00269B1B /* Dog.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A5DD3726356FE300269B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A5DD7126359C5400269B1B /* Cat.c in Sources */,
+				31A5DD4F2635709300269B1B /* Puppy.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		31A5DD1F26356E6F00269B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		31A5DD2026356E6F00269B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		31A5DD2226356E6F00269B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		31A5DD2326356E6F00269B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		31A5DD2C26356ED300269B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31A5DD2D26356ED300269B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		31A5DD3C26356FE300269B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31A5DD3D26356FE300269B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31A5DD1526356E6F00269B1B /* Build configuration list for PBXProject "XcodeDuplicatedSymbols-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A5DD1F26356E6F00269B1B /* Debug */,
+				31A5DD2026356E6F00269B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A5DD2126356E6F00269B1B /* Build configuration list for PBXNativeTarget "XcodeDuplicatedSymbols-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A5DD2226356E6F00269B1B /* Debug */,
+				31A5DD2326356E6F00269B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A5DD2B26356ED300269B1B /* Build configuration list for PBXNativeTarget "Dog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A5DD2C26356ED300269B1B /* Debug */,
+				31A5DD2D26356ED300269B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A5DD3B26356FE300269B1B /* Build configuration list for PBXNativeTarget "Puppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A5DD3C26356FE300269B1B /* Debug */,
+				31A5DD3D26356FE300269B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31A5DD1226356E6F00269B1B /* Project object */;
+}
